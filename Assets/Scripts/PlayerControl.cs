@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerControl : MonoBehaviour
 {
+    public float cooldownTimeSec = 0.0f;
+    float cooldownTimer = 0.0f;
+
     [SerializeField]
     Camera mainCamera;
 
@@ -16,11 +19,31 @@ public class PlayerControl : MonoBehaviour
     float arrowSpeed;
 
     const float SPRITE_CORRECTION_ANGLE = -90;
+    bool isAttacking = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
+    }
+
+    public void Update()
+    {
+        cooldownTimer -= Time.deltaTime;
+        cooldownTimer = Mathf.Max(cooldownTimer, 0.0f);
+
+        if (isAttacking && cooldownTimer <= 0.0f)
+        {
+            cooldownTimer = cooldownTimeSec;
+
+            var arrow = arrowPool.GetObject();
+            var mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = player.transform.position.z;
+            var truePos = mousePos - player.transform.position;
+            float angle = Mathf.Atan2(truePos.y, truePos.x) * Mathf.Rad2Deg + SPRITE_CORRECTION_ANGLE;
+            arrow.SetSpeed(angle, arrowSpeed);
+            arrow.transform.position = player.transform.position;
+            arrow.gameObject.SetActive(true);
+        }
     }
 
     public void HandleMovement(InputAction.CallbackContext context)
@@ -30,17 +53,14 @@ public class PlayerControl : MonoBehaviour
 
     public void HandleFire(InputAction.CallbackContext context)
     {
-        //Debug.LogWarning("Fire");
-        if (context.started)
+        if (context.performed)
         {
-            var arrow = arrowPool.GetObject();
-            var mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = player.transform.position.z;
-            var truePos = mousePos - player.transform.position;
-            float angle = Mathf.Atan2(truePos.y, truePos.x) * Mathf.Rad2Deg + SPRITE_CORRECTION_ANGLE;
-            arrow.SetSpeed(angle, arrowSpeed);
-            arrow.transform.position = player.transform.position;
-            arrow.gameObject.SetActive(true);
+            isAttacking = true;
+        }
+
+        if (context.canceled)
+        {
+            isAttacking = false;
         }
     }
 
