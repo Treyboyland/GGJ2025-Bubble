@@ -5,6 +5,9 @@ public class Bubble : MonoBehaviour
     [SerializeField]
     BubbleStats stats;
 
+    [SerializeField]
+    GameEvent bubblePoppedEvent;
+
     int currentHealth;
 
     public BubbleStats Stats => stats;
@@ -30,6 +33,7 @@ public class Bubble : MonoBehaviour
         {
             currentHealth = 0;
             //TODO: Die
+            bubblePoppedEvent.Invoke();
             gameObject.SetActive(false);
         }
     }

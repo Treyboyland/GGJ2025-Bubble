@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 25682197fb02c11449b94d7cf62f9ab2, type: 2}
+  bubblePoppedEvent: {fileID: 11400000, guid: 801edfd794449224482ffba60e856887, type: 2}
 --- !u!58 &8728144367241286245
 CircleCollider2D:
   m_ObjectHideFlags: 0
