@@ -17,8 +17,7 @@ public class EggHealth : MonoBehaviour
 
 		if (health <= 0)
 		{
-			//onDied.Invoke();
-			EggDie();
+			onDied.Invoke();
 		}
 	}
 
@@ -31,10 +30,4 @@ public class EggHealth : MonoBehaviour
 			bubble.gameObject.SetActive(false);
         }
 	}
-
-	void EggDie()
-    {
-		// subtract points too
-		Destroy(this.gameObject);
-    }
 }
