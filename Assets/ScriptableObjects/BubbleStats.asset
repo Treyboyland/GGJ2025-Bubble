@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   speed: 3
-  randomizedSpeed: {x: 3, y: 6}
-  useRandom: 0
+  randomizedSpeed: {x: 1, y: 3}
+  useRandom: 1
+  score: 0

@@ -8,6 +8,11 @@ public static class HelperFunctions
         return UnityEngine.Random.Range(vector.x, vector.y);
     }
 
+    public static int Random(this Vector2Int vector)
+    {
+        return UnityEngine.Random.Range(vector.x, vector.y + 1);
+    }
+
     public static Vector2 Random(this Vector4 vector)
     {
         float x = new Vector2(vector.x, vector.y).Random();

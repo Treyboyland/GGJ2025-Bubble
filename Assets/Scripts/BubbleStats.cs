@@ -15,7 +15,12 @@ public class BubbleStats : ScriptableObject
     [SerializeField]
     bool useRandom;
 
+    [SerializeField]
+    int score;
+
     public int Health => health;
 
     public float Speed => useRandom ? randomizedSpeed.Random() : speed;
+
+    public int Score => score;
 }
