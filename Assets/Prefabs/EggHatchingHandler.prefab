@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8598092479719505075}
   - component: {fileID: 1046256075500534868}
-  - component: {fileID: 2233893907045991195}
-  - component: {fileID: 2135823293030942468}
   m_Layer: 0
   m_Name: EggHatchingHandler
   m_TagString: Untagged
@@ -47,59 +45,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eggs: {fileID: 11400000, guid: 10e0762376f1e9e419c6719bbea86576, type: 2}
---- !u!114 &2233893907045991195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518980245869603796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9750c3f0109d39444a144e65477b70a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: c0f54b1f70e66524abee181c5b95ce53, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046256075500534868}
-        m_TargetAssemblyTypeName: EggHatchingHandler, Assembly-CSharp
-        m_MethodName: EnsureEggIsHatching
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2135823293030942468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518980245869603796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9750c3f0109d39444a144e65477b70a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: a35d5f0b5cf606041b02b5cd794f4832, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046256075500534868}
-        m_TargetAssemblyTypeName: EggHatchingHandler, Assembly-CSharp
-        m_MethodName: EnsureEggIsHatching
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

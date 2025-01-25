@@ -136,18 +136,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: c0f54b1f70e66524abee181c5b95ce53, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &4761393429000748507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,25 +148,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017a0c5a78f6ea34e90cfe20c7ad8b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 3
+  time: 1
   onDone:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3689290181983095150}
         m_TargetAssemblyTypeName: GameObjectSpawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: a35d5f0b5cf606041b02b5cd794f4832, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
-        m_MethodName: Invoke
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
