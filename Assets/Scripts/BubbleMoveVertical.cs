@@ -10,7 +10,7 @@ public class BubbleMoveVertical : MonoBehaviour
 
     float timer = 0.0f;
     const float HORZ_FORCE = 30.0f;
-    const float RND_SPEED_RNG = 0.35f;
+    const float RND_SPEED_RNG = 0.28f;
 
     /// <summary>
     /// This function is called when the object becomes enabled and active.
