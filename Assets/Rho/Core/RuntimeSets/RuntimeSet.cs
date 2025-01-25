@@ -17,6 +17,8 @@ namespace rho
         public delegate void RuntimeSetEventHandler(RuntimeSet<T> sender);
 
         public event RuntimeSetEventHandler SetChanged = delegate {};
+        public event RuntimeSetEventHandler ItemAdded = delegate {};
+        public event RuntimeSetEventHandler ItemRemoved = delegate {};
 
         public virtual int Count => ((ICollection<T>)_items).Count;
 
@@ -26,12 +28,14 @@ namespace rho
         {
             ((ICollection<T>)_items).Add(item);
             SetChanged(this);
+            ItemAdded(this);
         }
 
         public virtual void Clear()
         {
             ((ICollection<T>)_items).Clear();
             SetChanged(this);
+            ItemRemoved(this);
         }
 
         public virtual bool Contains(T item)
@@ -54,6 +58,7 @@ namespace rho
         {
             var rval =  ((ICollection<T>)_items).Remove(item);
             SetChanged(this);
+            ItemRemoved(this);
             return rval;
         }
 
