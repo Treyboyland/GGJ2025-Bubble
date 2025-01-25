@@ -35,4 +35,22 @@ public class ObjectPool<T> : MonoBehaviour where T : MonoBehaviour
     {
         return pool.Where(x => x.gameObject.activeInHierarchy).Count() > 0;
     }
+
+    public int GetActiveCount()
+    {
+        return pool.Where(x => x.gameObject.activeInHierarchy).Count();
+    }
+
+    public T GetObject()
+    {
+        foreach (var obj in pool)
+        {
+            if (!obj.gameObject.activeInHierarchy)
+            {
+                return obj;
+            }
+        }
+
+        return CreateObject();
+    }
 }
