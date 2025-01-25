@@ -10,13 +10,14 @@ public class BubbleMoveVertical : MonoBehaviour
 
     float timer = 0.0f;
     const float HORZ_FORCE = 30.0f;
+    const float RND_SPEED_RNG = 0.35f;
 
     /// <summary>
     /// This function is called when the object becomes enabled and active.
     /// </summary>
     void OnEnable()
     {
-        body.linearVelocity = new Vector2(0, bubble.Stats.Speed);
+        body.linearVelocity = new Vector2(0, bubble.Stats.Speed + Random.Range(-RND_SPEED_RNG, RND_SPEED_RNG));
         ResetTimer();
     }
 
