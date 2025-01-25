@@ -333,6 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 9207010099679282404}
+  scoreValue: {fileID: 11400000, guid: c7e7060644a8de54fb087b5fd0c2a089, type: 2}
 --- !u!114 &9207010099679282404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,7 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4174152857974040029}
-  - component: {fileID: 4274413531043171297}
+  - component: {fileID: 4302681367766572482}
   m_Layer: 0
   m_Name: OnScoreUpdated
   m_TagString: Untagged
@@ -960,7 +961,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 27361052795175081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4274413531043171297
+--- !u!114 &4302681367766572482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -969,17 +970,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7053188576611401471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b7b51b761712d45a4f1548b884f9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 319396418027475418d03f7fe87046a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 8c4ef240213e2e746809699815e219ef, type: 2}
-  Response:
+  _variable: {fileID: 11400000, guid: c7e7060644a8de54fb087b5fd0c2a089, type: 2}
+  _callback:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9062598090054131293}
         m_TargetAssemblyTypeName: ScoreTextUI, Assembly-CSharp
         m_MethodName: UpdateText
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
