@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8684983453005981009}
   m_Layer: 0
   m_Name: Egg
-  m_TagString: Untagged
+  m_TagString: egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017a0c5a78f6ea34e90cfe20c7ad8b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 1
+  time: 10
   onDone:
     m_PersistentCalls:
       m_Calls:
