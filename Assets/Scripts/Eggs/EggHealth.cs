@@ -20,4 +20,14 @@ public class EggHealth : MonoBehaviour
 			onDied.Invoke();
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+    {
+		var bubble = other.gameObject.GetComponent<Bubble>();
+		if (bubble != null)
+        {
+			Damage();
+			bubble.gameObject.SetActive(false);
+        }
+	}
 }
