@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BubbleStats
   m_EditorClassIdentifier: 
   health: 1
-  speed: 3
+  speed: 1.7
   randomizedSpeed: {x: 1, y: 3}
   useRandom: 1
   score: 0
