@@ -1,3 +1,4 @@
+using rho;
 using TMPro;
 using UnityEngine;
 
@@ -5,6 +6,9 @@ public class EggTrackingTextUI : MonoBehaviour
 {
     [SerializeField]
     TMP_Text textBox;
+
+    [SerializeField]
+    RuntimeGameObjectSet eggs;
 
     int hatched;
 
@@ -16,6 +20,7 @@ public class EggTrackingTextUI : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        total = eggs.Count;
         UpdateText();
     }
 
@@ -24,6 +29,11 @@ public class EggTrackingTextUI : MonoBehaviour
         string hatchedText = string.Format("{0:D2}", hatched);
         string totalText = string.Format("{0:D2}", total);
         textBox.text = $"Hatched: {hatchedText}/{totalText}";
+    }
+
+    public void IncrementHatched()
+    {
+        UpdateHatched(hatched + 1);
     }
 
     public void UpdateHatched(int numHatched)
