@@ -720,6 +720,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7439068448358406504, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
+      propertyPath: numProjectilesToShoot
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7794335117135698907, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

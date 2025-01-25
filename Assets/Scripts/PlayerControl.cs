@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerControl : MonoBehaviour
 {
+    public int numProjectilesToShoot = 1;
+    public float projSeparationFactor = 1.0f; // Between 0.5 and 3 seems reasonable
     public float cooldownTimeSec = 0.0f;
     float cooldownTimer = 0.0f;
 
@@ -35,14 +37,20 @@ public class PlayerControl : MonoBehaviour
         {
             cooldownTimer = cooldownTimeSec;
 
-            var arrow = arrowPool.GetObject();
-            var mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = player.transform.position.z;
-            var truePos = mousePos - player.transform.position;
-            float angle = Mathf.Atan2(truePos.y, truePos.x) * Mathf.Rad2Deg + SPRITE_CORRECTION_ANGLE;
-            arrow.SetSpeed(angle, arrowSpeed);
-            arrow.transform.position = player.transform.position;
-            arrow.gameObject.SetActive(true);
+            for (int i = 0; i < numProjectilesToShoot; i++)
+            {
+                var arrow = arrowPool.GetObject();
+                var mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+                mousePos.z = player.transform.position.z;
+                var truePos = mousePos - player.transform.position;
+                float angle = Mathf.Atan2(truePos.y, truePos.x) * Mathf.Rad2Deg + SPRITE_CORRECTION_ANGLE;
+                arrow.SetSpeed(angle, arrowSpeed);
+                arrow.transform.position = player.transform.position;
+                if (i > 0)
+                    arrow.transform.position += new Vector3(Random.value * projSeparationFactor, Random.value * projSeparationFactor);
+
+                arrow.gameObject.SetActive(true);
+            }
         }
     }
 
