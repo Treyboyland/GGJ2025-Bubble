@@ -13,8 +13,6 @@ public class PowerupNotificationText : MonoBehaviour
 
     List<PowerupData> currentPowerups = new List<PowerupData>();
 
-    bool isRunning = false;
-
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
@@ -46,7 +44,6 @@ public class PowerupNotificationText : MonoBehaviour
         {
             StopAllCoroutines();
             textBox.text = "";
-            isRunning = false;
         }
         else
         {
@@ -58,7 +55,6 @@ public class PowerupNotificationText : MonoBehaviour
 
     IEnumerator GoThroughPowerups()
     {
-        isRunning = true;
         while (true)
         {
             foreach (var powerup in currentPowerups)
