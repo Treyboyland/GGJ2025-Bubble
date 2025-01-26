@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: OneOffAudioData-Shooting
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: d080d5707795a3540ab6327c4240e925, type: 3}
-  volumeRange: {x: 0.5, y: 0.75}
-  pitchRange: {x: 0.9, y: 1.1}
+  - {fileID: 8300000, guid: 9c31603aee6779349a5e3058edf4f37a, type: 3}
+  - {fileID: 8300000, guid: 53d350fd71fecc94c93ad1a466bee761, type: 3}
+  - {fileID: 8300000, guid: 30dc97ee0c90dd3449c39711eaccd767, type: 3}
+  volumeRange: {x: 0.8, y: 1}
+  pitchRange: {x: 0.75, y: 1.25}
