@@ -24,7 +24,7 @@ public class BubbleSpawner : MonoBehaviour
     // Eventually will set these to real values
     public int eggsRemain = 0;
     int diffIncSeq = 0;
-    const int NUM_TIMES_BEFORE_SUB_NUMSPAWN = 5;
+    const int NUM_TIMES_BEFORE_SUB_NUMSPAWN = 4;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
