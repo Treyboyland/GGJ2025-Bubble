@@ -845,6 +845,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36ad1f128629694caac91a6d2dbd8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1476593520678047441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011019401136080863, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891824905871709099, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
+      propertyPath: m_Name
+      value: BurstParticleHandler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8abf031a174b754ba81fc34c5c4eb23, type: 3}
 --- !u!1001 &3644010684139688690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1141,3 +1198,4 @@ SceneRoots:
   - {fileID: 3644010684139688690}
   - {fileID: 4783325182207859117}
   - {fileID: 3718935984826882213}
+  - {fileID: 1476593520678047441}
