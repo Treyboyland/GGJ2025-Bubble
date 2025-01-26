@@ -25,11 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710582834743876369}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.9102944, y: -0.54859805, z: 0.030812263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5407865725839655195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4940049817700708401
@@ -107,7 +108,7 @@ MonoBehaviour:
       TangentOut:
         x: -0.000000015498108
         y: 1.6001156e-10
-        z: 0.000000006967179
+        z: 0
       Rotation:
         value:
           x: 0.009640298
@@ -117,29 +118,29 @@ MonoBehaviour:
     - Position:
         x: 1.2502944
         y: 1.3985981
-        z: -0.0008126162
+        z: 0
       TangentIn:
         x: 0
         y: 0.000000059604645
-        z: -0.42795974
+        z: 0
       TangentOut:
         x: -0.000000029802322
         y: 0
-        z: 0.4279598
+        z: 0
       Rotation:
         value:
-          x: 0.1548666
-          y: 0.6899394
-          z: -0.41913193
-          w: 0.56949836
+          x: 0.2932492
+          y: 0.64343214
+          z: -0.2932492
+          w: 0.64343214
     - Position:
         x: 1.3352945
         y: 0.33959806
         z: 0
       TangentIn:
-        x: 0.0000000037252903
+        x: 0
         y: 0
-        z: 2.220446e-16
+        z: -0
       TangentOut:
         x: 0
         y: 0
@@ -147,31 +148,31 @@ MonoBehaviour:
       Rotation:
         value:
           x: 0
-          y: 0.70710677
+          y: 0
           z: 0
-          w: 0.70710677
+          w: 1
     - Position:
         x: 1.1802944
         y: -0.8714019
-        z: -0.0008126162
+        z: 0
       TangentIn:
         x: 0.000000029802322
         y: 0.000000029802322
-        z: -0.5135018
+        z: 0
       TangentOut:
         x: -0.000000059604645
         y: -0.000000029802322
-        z: 0.5135018
+        z: 0
       Rotation:
         value:
-          x: 0.42645365
-          y: -0.56421196
-          z: 0.15155552
-          w: 0.6905311
+          x: -0.29573557
+          y: 0.6424472
+          z: -0.29591566
+          w: -0.6420561
     - Position:
         x: 0.00029444695
         y: -1.2214019
-        z: -0.0008126162
+        z: 0
       TangentIn:
         x: 0
         y: 0
@@ -195,7 +196,7 @@ MonoBehaviour:
       Tension: 0.5
     - Mode: 4
       Tension: 0.5
-    - Mode: 4
+    - Mode: 2
       Tension: 0.5
     - Mode: 4
       Tension: 0.5
@@ -212,3 +213,85 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!1 &1659735927345142736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5407865725839655195}
+  - component: {fileID: 7961668662746661811}
+  - component: {fileID: 7004608218967637300}
+  m_Layer: 0
+  m_Name: LarvaDeathTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5407865725839655195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659735927345142736}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.275, y: -1.341, z: 0.075429216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1250098146940442951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &7961668662746661811
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659735927345142736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
+--- !u!114 &7004608218967637300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659735927345142736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a797372a71dda6e49b330ca632451de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects: {fileID: 11400000, guid: 8355149d1c344c6488a0d47ddb3371ec, type: 2}
