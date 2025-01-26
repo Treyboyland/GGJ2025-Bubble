@@ -6,10 +6,12 @@ public class ScoreHandler : MonoBehaviour
     [SerializeField] rho.RuntimeInt score;
     [SerializeField] rho.RuntimeGameObjectSet eggs;
 
+    public int ScoreMultiplier {get;set;} = 1;
+
     #region Event Handlers
     public void ModifyScore(int amount)
     {
-        score.Value += amount;
+        score.Value += amount > 0 ? ScoreMultiplier * amount : amount;
     }
     #endregion
     
