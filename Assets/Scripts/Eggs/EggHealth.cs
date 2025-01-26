@@ -11,6 +11,8 @@ public class EggHealth : MonoBehaviour
 
 	//[Button(enabledMode:EButtonEnableMode.Playmode)]
 
+	public Shake shaker;
+
 	const float RED_FLASH_TIME = 0.25f;
 	float redTimer = 0.0f;
 	bool canFlash = false;
@@ -52,6 +54,7 @@ public class EggHealth : MonoBehaviour
 		if (bubble != null)
         {
 			Damage();
+			shaker.DoShake(2.0f, 1.0f);
 			bubble.gameObject.SetActive(false);
 
 			gameObject.GetComponent<SpriteRenderer>().color = Color.red;
