@@ -9,7 +9,32 @@ public class EggHealth : MonoBehaviour
 	[SerializeField] UnityEvent<int> onDamaged;
 	[SerializeField] UnityEvent onDied;
 
-	[Button(enabledMode:EButtonEnableMode.Playmode)]
+	//[Button(enabledMode:EButtonEnableMode.Playmode)]
+
+	const float RED_FLASH_TIME = 0.25f;
+	float redTimer = 0.0f;
+	bool canFlash = false;
+
+    private void Start()
+    {
+		redTimer = RED_FLASH_TIME;
+	}
+	private void Update()
+	{
+		if (canFlash)
+		{
+			redTimer -= Time.deltaTime;
+			redTimer = Mathf.Max(redTimer, 0.0f);
+		}
+
+		if (redTimer <= 0.0f)
+		{
+			gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+			redTimer = RED_FLASH_TIME;
+			canFlash = false;
+		}
+	}
+
 	public void Damage()
 	{
 		--health;
@@ -28,6 +53,10 @@ public class EggHealth : MonoBehaviour
         {
 			Damage();
 			bubble.gameObject.SetActive(false);
-        }
+
+			gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+			canFlash = true;
+			redTimer = RED_FLASH_TIME;
+		}
 	}
 }

@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: BubbleStats
   m_EditorClassIdentifier: 
   health: 1
-  speed: 1.7
+  speed: 1.2
   randomizedSpeed: {x: 1, y: 3}
   useRandom: 1
   score: 0
+  powerupSpawningOdds: 0.1
+  potentialPowerups:
+  - {fileID: 11400000, guid: d4fbd9b6ce4951d43802bc1a5927c8f7, type: 2}
+  - {fileID: 11400000, guid: d9551fa3b6c1f5248bdc6bb2a9bbab7e, type: 2}
+  - {fileID: 11400000, guid: a02994433eb9ff24f9a9b234e141af94, type: 2}
+  - {fileID: 11400000, guid: 092b5bd79f1d0b348b4f63789331d308, type: 2}

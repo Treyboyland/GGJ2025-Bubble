@@ -238,3 +238,4 @@ MonoBehaviour:
   player: {fileID: 0}
   arrowPool: {fileID: 0}
   arrowSpeed: 15
+  onPlayerFired: {fileID: 11400000, guid: 165367e0a9448834fbe22224fdb6d850, type: 2}
