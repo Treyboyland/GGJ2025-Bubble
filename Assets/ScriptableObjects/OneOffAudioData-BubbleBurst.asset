@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: OneOffAudioData-BubbleBurst
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: efded67c67176fc42bbf16ad7bb96ac6, type: 3}
-  - {fileID: 8300000, guid: bb0c9a4838567e94f851f168d49e6650, type: 3}
-  - {fileID: 8300000, guid: 6c9e923e6f14f4145b593d190a7c22ba, type: 3}
-  - {fileID: 8300000, guid: 06011e729e87cdd418b62b123df1f6df, type: 3}
+  - {fileID: 8300000, guid: 6aa02052d2a02824c87a705c722d69ea, type: 3}
+  - {fileID: 8300000, guid: 2adc6bd4e799259429979776946c8446, type: 3}
+  - {fileID: 8300000, guid: 012ee8dc4b8597a40a0115878412e61e, type: 3}
   volumeRange: {x: 0.5, y: 0.75}
   pitchRange: {x: 0.9, y: 1.1}
