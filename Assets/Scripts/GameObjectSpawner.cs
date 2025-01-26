@@ -9,4 +9,9 @@ public class GameObjectSpawner : MonoBehaviour
     {
         Instantiate(original:target, position: location.position, rotation: location.rotation);
     }
+
+    public void SpawnAtPosition(Vector2 position)
+    {
+        Instantiate(original:target, position: position, rotation: Quaternion.identity);
+    }
 }
