@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedPowerup: {fileID: 11400000, guid: 092b5bd79f1d0b348b4f63789331d308, type: 2}
+  powerupRemovedEvent: {fileID: 11400000, guid: 15444987716c6924c9c9c90123932608, type: 2}
   rapidFireMultiplier: 3
 --- !u!1 &6166092365977271443
 GameObject:
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedPowerup: {fileID: 11400000, guid: d9551fa3b6c1f5248bdc6bb2a9bbab7e, type: 2}
+  powerupRemovedEvent: {fileID: 11400000, guid: 15444987716c6924c9c9c90123932608, type: 2}
   shotMultiplier: 3
 --- !u!1 &8820005405763700662
 GameObject:
@@ -219,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedPowerup: {fileID: 11400000, guid: d4fbd9b6ce4951d43802bc1a5927c8f7, type: 2}
+  powerupRemovedEvent: {fileID: 11400000, guid: 15444987716c6924c9c9c90123932608, type: 2}
 --- !u!1 &8994550202858936395
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,3 +267,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedPowerup: {fileID: 11400000, guid: a02994433eb9ff24f9a9b234e141af94, type: 2}
+  powerupRemovedEvent: {fileID: 11400000, guid: 15444987716c6924c9c9c90123932608, type: 2}

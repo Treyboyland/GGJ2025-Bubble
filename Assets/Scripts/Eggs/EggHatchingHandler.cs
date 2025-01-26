@@ -12,10 +12,11 @@ public class EggHatchingHandler : MonoBehaviour
 
     public void EnsureEggIsHatching()
     {
-        var allTimers = eggs.Select(e => e.GetComponent<CountdownTimer>()).Where(e => e != null && e.gameObject != null);
-        if (allTimers.Count() > 0 && !allTimers.Any(t => t.enabled))
+        var allEggFacades = eggs.Select(e => e.GetComponent<EggHatchingFacade>()).Where(ehf => ehf != null);
+
+        if (allEggFacades.Count() > 0 && !allEggFacades.Any(ehf => ehf.IsHatching))
         {
-            allTimers.First().enabled = true;
+            allEggFacades.First().StartHatching();
         }
     }
 
