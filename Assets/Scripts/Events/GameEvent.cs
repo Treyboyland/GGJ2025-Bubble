@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameEvent", menuName = "Scriptable Objects/GameEvent")]
@@ -23,6 +24,7 @@ public class GameEvent : ScriptableObject
         listeners.Remove(listener);
     }
 
+    [Button(enabledMode:EButtonEnableMode.Playmode)]
     public void Invoke()
     {
         foreach (var listener in listeners)
