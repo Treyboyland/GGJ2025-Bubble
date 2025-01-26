@@ -1784,10 +1784,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185953487375541087, guid: 7f58d639a33543e42a5e570a02deeace, type: 3}
-      propertyPath: gameEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 165367e0a9448834fbe22224fdb6d850, type: 2}
     - target: {fileID: 8498537337492717693, guid: 7f58d639a33543e42a5e570a02deeace, type: 3}
       propertyPath: m_Name
       value: OneOffAudioHandler
