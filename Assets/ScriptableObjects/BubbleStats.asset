@@ -17,7 +17,7 @@ MonoBehaviour:
   randomizedSpeed: {x: 1, y: 3}
   useRandom: 0
   score: 0
-  powerupSpawningOdds: 0.05
+  powerupSpawningOdds: 0.06
   potentialPowerups:
   - {fileID: 11400000, guid: 092b5bd79f1d0b348b4f63789331d308, type: 2}
   - {fileID: 11400000, guid: d9551fa3b6c1f5248bdc6bb2a9bbab7e, type: 2}

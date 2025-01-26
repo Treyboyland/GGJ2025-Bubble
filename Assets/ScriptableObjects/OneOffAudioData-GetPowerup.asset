@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d94d1e259ed662f40acb3040b68af992, type: 3}
-  m_Name: OneOffAudioData-UI
+  m_Name: OneOffAudioData-GetPowerup
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 8090caa43eb2e4f49a828c679a9c22fe, type: 3}
+  - {fileID: 8300000, guid: 3d196b136f86d99469842a6557096eba, type: 3}
   volumeRange: {x: 1, y: 1}
   pitchRange: {x: 0.75, y: 1.25}
