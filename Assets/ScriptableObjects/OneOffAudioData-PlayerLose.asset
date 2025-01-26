@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 141420406072a2a4a8dfc5056276c576, type: 3}
-  m_Name: PowerupData-Multishot
+  m_Script: {fileID: 11500000, guid: d94d1e259ed662f40acb3040b68af992, type: 3}
+  m_Name: OneOffAudioData-PlayerLose
   m_EditorClassIdentifier: 
-  powerupName: Multishot
-  powerUpTextAbbreviation: '||'
-  secondsForPowerup: 7
+  audioClips:
+  - {fileID: 8300000, guid: 7cec150e1647d6344b64cda00134cba2, type: 3}
+  volumeRange: {x: 1, y: 1}
+  pitchRange: {x: 0.75, y: 1.25}

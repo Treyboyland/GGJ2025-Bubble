@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PowerupData-PiercingShot
   m_EditorClassIdentifier: 
   powerupName: PiercingShot
-  powerUpTextAbbreviation: '%'
-  secondsForPowerup: 5
+  powerUpTextAbbreviation: <-
+  secondsForPowerup: 7
