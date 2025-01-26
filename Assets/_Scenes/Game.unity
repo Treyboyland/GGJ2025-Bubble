@@ -1510,9 +1510,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2188825447579905949, guid: 1c865430cebd23449b93139fd922f6a6, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 5965232930158128532, guid: 1c865430cebd23449b93139fd922f6a6, type: 3}
       propertyPath: m_Name
       value: ScoreHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680741301209777709, guid: 1c865430cebd23449b93139fd922f6a6, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2332,8 +2340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: {x: -2.8, y: 2}
   yPosition: -3.8
-  secondsBetweenSpawns: {x: 2, y: 5}
-  numberOfSpawns: {x: 1, y: 3}
+  secondsBetweenSpawns: {x: 2, y: 4}
+  numberOfSpawns: {x: 1, y: 5}
   pool: {fileID: 1549637013}
   eggsRemain: 0
 --- !u!4 &1549637015

@@ -24,7 +24,7 @@ public class BubbleSpawner : MonoBehaviour
     // Eventually will set these to real values
     public int eggsRemain = 0;
     int diffIncSeq = 0;
-    const int NUM_TIMES_BEFORE_SUB_NUMSPAWN = 4;
+    const int NUM_TIMES_BEFORE_SUB_NUMSPAWN = 2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -78,6 +78,6 @@ public class BubbleSpawner : MonoBehaviour
             numberOfSpawns.y = Mathf.Max(numberOfSpawns.y, 1);
         }
 
-        secondsBetweenSpawns = Vector2.Scale(secondsBetweenSpawns, new Vector2(0.8f, 0.8f));
+        secondsBetweenSpawns = Vector2.Scale(secondsBetweenSpawns, new Vector2(0.75f, 0.75f));
     }
 }
