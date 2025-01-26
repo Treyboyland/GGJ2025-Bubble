@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94d1e259ed662f40acb3040b68af992, type: 3}
+  m_Name: OneOffAudioData-BubbleBurst
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 6aa02052d2a02824c87a705c722d69ea, type: 3}
+  - {fileID: 8300000, guid: 2adc6bd4e799259429979776946c8446, type: 3}
+  - {fileID: 8300000, guid: 012ee8dc4b8597a40a0115878412e61e, type: 3}
+  volumeRange: {x: 0.5, y: 0.75}
+  pitchRange: {x: 0.9, y: 1.1}
