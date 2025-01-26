@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PowerupData-Multishot
   m_EditorClassIdentifier: 
   powerupName: Multishot
-  powerUpTextAbbreviation: '|||'
-  secondsForPowerup: 10
+  powerUpTextAbbreviation: '||'
+  secondsForPowerup: 7
