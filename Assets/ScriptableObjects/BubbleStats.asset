@@ -15,7 +15,7 @@ MonoBehaviour:
   health: 1
   speed: 1.2
   randomizedSpeed: {x: 1, y: 3}
-  useRandom: 1
+  useRandom: 0
   score: 0
   powerupSpawningOdds: 0.1
   potentialPowerups:
