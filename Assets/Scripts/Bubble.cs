@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
@@ -8,9 +9,20 @@ public class Bubble : MonoBehaviour
     [SerializeField]
     GameEvent bubblePoppedEvent;
 
+    [SerializeField]
+    GameEventBurstData bubbleBurstEvent;
+
+    [SerializeField]
+    GameEventPowerup activatePowerupEvent;
+
+    [SerializeField]
+    TMP_Text powerupText;
+
     int currentHealth;
 
     public BubbleStats Stats => stats;
+
+    PowerupData currentPowerup;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +36,16 @@ public class Bubble : MonoBehaviour
     void OnEnable()
     {
         currentHealth = stats.Health;
+        if (stats.ShouldSpawnPowerup())
+        {
+            currentPowerup = stats.PotentialPowerups.GetRandom();
+            powerupText.text = currentPowerup.PowerUpTextAbbreviation;
+        }
+        else
+        {
+            currentPowerup = null;
+            powerupText.text = "";
+        }
     }
 
     void Damage(int damage)
@@ -34,6 +56,11 @@ public class Bubble : MonoBehaviour
             currentHealth = 0;
             //TODO: Die
             bubblePoppedEvent.Invoke();
+            bubbleBurstEvent.Invoke(new BubbleBurstData() { BubbleStats = stats, BurstLocation = transform.position });
+            if(currentPowerup != null)
+            {
+                activatePowerupEvent.Invoke(currentPowerup);
+            }
             gameObject.SetActive(false);
         }
     }

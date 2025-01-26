@@ -18,10 +18,18 @@ public class PlayerControl : MonoBehaviour
     ArrowPool arrowPool;
 
     [SerializeField]
+    ArrowPool piercingArrowPool;
+
+    [SerializeField]
     float arrowSpeed;
+
+    [SerializeField]
+    GameEvent onPlayerFired;
 
     const float SPRITE_CORRECTION_ANGLE = -90;
     bool isAttacking = false;
+
+    public bool UsePiercingArrows { get; set; } = false;
 
     void Start()
     {
@@ -33,13 +41,14 @@ public class PlayerControl : MonoBehaviour
         cooldownTimer -= Time.deltaTime;
         cooldownTimer = Mathf.Max(cooldownTimer, 0.0f);
 
-        if (isAttacking && cooldownTimer <= 0.0f)
+        if (isAttacking && cooldownTimer <= 0.0f && Time.timeScale > 0.0f)
         {
             cooldownTimer = cooldownTimeSec;
+            onPlayerFired.Invoke();
 
             for (int i = 0; i < numProjectilesToShoot; i++)
             {
-                var arrow = arrowPool.GetObject();
+                var arrow = UsePiercingArrows && piercingArrowPool != null ? piercingArrowPool.GetObject() : arrowPool.GetObject();
                 var mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
                 mousePos.z = player.transform.position.z;
                 var truePos = mousePos - player.transform.position;

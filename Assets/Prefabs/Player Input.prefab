@@ -198,6 +198,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 54844ab0-64a9-44dc-99a7-5be22e6a21ff
     m_ActionName: 'Player/Restart[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: f55603a129406a7499fb4c05f712ade4, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 53d9ac3d-9f04-44fb-aadf-f39dda0b8130
+    m_ActionName: 'Player/Screenshot[/Keyboard/period]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -215,8 +231,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c923e3665d052d4795cfe43420eb315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numProjectilesToShoot: 1
+  projSeparationFactor: 1
   cooldownTimeSec: 0.5
   mainCamera: {fileID: 0}
   player: {fileID: 0}
   arrowPool: {fileID: 0}
   arrowSpeed: 15
+  onPlayerFired: {fileID: 11400000, guid: 165367e0a9448834fbe22224fdb6d850, type: 2}
