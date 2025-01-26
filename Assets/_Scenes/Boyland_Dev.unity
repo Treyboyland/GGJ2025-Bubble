@@ -352,34 +352,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Input
       objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.data[20].m_ActionId
-      value: a711e033-ca5a-4c68-9f98-e70d75e5b1c4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.data[21].m_ActionId
-      value: 476a9dfa-99cc-4bee-9b24-16e98a6838a7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.data[22].m_ActionId
-      value: 54844ab0-64a9-44dc-99a7-5be22e6a21ff
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.data[20].m_ActionName
-      value: 'Player/Pause[/Keyboard/p]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.data[21].m_ActionName
-      value: 'Player/Quit[/Keyboard/escape]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716932033872951741, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
-      propertyPath: m_ActionEvents.Array.data[22].m_ActionName
-      value: 'Player/Restart[/Keyboard/r]'
-      objectReference: {fileID: 0}
     - target: {fileID: 7439068448358406504, guid: 27477bfb2098fc14fadb0f4a44ef27ab, type: 3}
       propertyPath: player
       value: 
@@ -564,6 +536,7 @@ MonoBehaviour:
   secondsBetweenSpawns: {x: 3, y: 5}
   numberOfSpawns: {x: 3, y: 5}
   pool: {fileID: 1549637013}
+  eggsRemain: 0
 --- !u!4 &1549637015
 Transform:
   m_ObjectHideFlags: 0

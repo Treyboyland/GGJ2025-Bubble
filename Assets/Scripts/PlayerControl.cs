@@ -33,7 +33,7 @@ public class PlayerControl : MonoBehaviour
         cooldownTimer -= Time.deltaTime;
         cooldownTimer = Mathf.Max(cooldownTimer, 0.0f);
 
-        if (isAttacking && cooldownTimer <= 0.0f)
+        if (isAttacking && cooldownTimer <= 0.0f && Time.timeScale > 0.0f)
         {
             cooldownTimer = cooldownTimeSec;
 
