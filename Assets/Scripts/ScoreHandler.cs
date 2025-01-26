@@ -21,5 +21,9 @@ public class ScoreHandler : MonoBehaviour
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start() => SetScoreToSumOfAllEggHealth();
+    void Start()
+    {
+        //SetScoreToSumOfAllEggHealth();f
+        score.Value = 0;
+    }
 }
