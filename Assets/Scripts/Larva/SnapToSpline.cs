@@ -12,6 +12,12 @@ public class SnapToSpline : MonoBehaviour
     void Start()
     {
         var splineContainerObj = GameObject.FindGameObjectWithTag(pathTagName);
+
+        if (splineContainerObj == null)
+        {
+            return;
+        }
+
         var splineContainer = splineContainerObj.GetComponent<SplineContainer>();
 
         if (splineContainer)
@@ -27,10 +33,6 @@ public class SnapToSpline : MonoBehaviour
             splineAnim.Container = splineContainer;
             splineAnim.StartOffset = t;
             splineAnim.Play();
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 }
