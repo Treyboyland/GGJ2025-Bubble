@@ -281,6 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e2348ed31e494eb40d6ddab425c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 7361200853383566865}
+  normalTint: {r: 1, g: 1, b: 1, a: 1}
+  powerupTint: {r: 0, g: 0, b: 1, a: 1}
   stats: {fileID: 11400000, guid: 25682197fb02c11449b94d7cf62f9ab2, type: 2}
   bubblePoppedEvent: {fileID: 11400000, guid: 801edfd794449224482ffba60e856887, type: 2}
   bubbleBurstEvent: {fileID: 11400000, guid: 21237bebbf046ad4f888aaa4f2a87dd2, type: 2}
