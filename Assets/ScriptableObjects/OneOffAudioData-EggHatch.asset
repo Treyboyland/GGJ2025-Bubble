@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d94d1e259ed662f40acb3040b68af992, type: 3}
-  m_Name: OneOffAudioData-BubbleBurst
+  m_Name: OneOffAudioData-EggHatch
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 6aa02052d2a02824c87a705c722d69ea, type: 3}
-  - {fileID: 8300000, guid: 2adc6bd4e799259429979776946c8446, type: 3}
-  - {fileID: 8300000, guid: 012ee8dc4b8597a40a0115878412e61e, type: 3}
-  volumeRange: {x: 1, y: 1}
+  - {fileID: 8300000, guid: 12d29485255313142af0cd27ed56c76a, type: 3}
+  volumeRange: {x: 0.8, y: 1}
   pitchRange: {x: 0.75, y: 1.25}
