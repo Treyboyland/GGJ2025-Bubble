@@ -1936,8 +1936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b38f8b37478f394e88b51da829949ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPosition: {x: -3, y: 2}
-  yPosition: -2.4
+  xPosition: {x: -2.8, y: 2}
+  yPosition: -3.8
   secondsBetweenSpawns: {x: 2, y: 5}
   numberOfSpawns: {x: 1, y: 3}
   pool: {fileID: 1549637013}
