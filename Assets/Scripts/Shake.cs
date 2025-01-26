@@ -30,11 +30,14 @@ public class Shake : MonoBehaviour
         }
     }
 
-    public void DoShake(float strength, float duration)
+    public void DoShake(float strength)
     {
-        initialPosition = transform.position;
+        if (!canShake)
+        {
+            initialPosition = transform.position;
+        }
         canShake = true;
         curStrength = strength;
-        curDuration = duration;
+        curDuration = 0.35f;
     }
 }
