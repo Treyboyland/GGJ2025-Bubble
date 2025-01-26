@@ -5,6 +5,9 @@ public abstract class Powerup : MonoBehaviour
     [SerializeField]
     protected PowerupData associatedPowerup;
 
+    [SerializeField]
+    protected GameEventPowerup powerupRemovedEvent;
+
     protected float elapsedTime;
 
     bool isPowerupActive = false;
@@ -34,5 +37,6 @@ public abstract class Powerup : MonoBehaviour
     {
         elapsedTime = 0;
         isPowerupActive = false;
+        powerupRemovedEvent.Invoke(associatedPowerup);
     }
 }

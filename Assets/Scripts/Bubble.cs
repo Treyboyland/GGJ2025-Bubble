@@ -4,6 +4,15 @@ using UnityEngine;
 public class Bubble : MonoBehaviour
 {
     [SerializeField]
+    SpriteRenderer sprite;
+
+    [SerializeField]
+    Color normalTint;
+
+    [SerializeField]
+    Color powerupTint;
+
+    [SerializeField]
     BubbleStats stats;
 
     [SerializeField]
@@ -40,11 +49,13 @@ public class Bubble : MonoBehaviour
         {
             currentPowerup = stats.PotentialPowerups.GetRandom();
             powerupText.text = currentPowerup.PowerUpTextAbbreviation;
+            sprite.color = powerupTint;
         }
         else
         {
             currentPowerup = null;
             powerupText.text = "";
+            sprite.color = normalTint;
         }
     }
 
@@ -57,7 +68,7 @@ public class Bubble : MonoBehaviour
             //TODO: Die
             bubblePoppedEvent.Invoke();
             bubbleBurstEvent.Invoke(new BubbleBurstData() { BubbleStats = stats, BurstLocation = transform.position });
-            if(currentPowerup != null)
+            if (currentPowerup != null)
             {
                 activatePowerupEvent.Invoke(currentPowerup);
             }
